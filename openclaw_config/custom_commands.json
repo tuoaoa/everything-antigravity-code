@@ -1,0 +1,54 @@
+{
+  "commands": [
+    {
+      "trigger": "/plan",
+      "description": "Assess requirements, ground codebase patterns, write implementation plan and wait for confirmation.",
+      "executor": "node scripts/openclaw_plan.js"
+    },
+    {
+      "trigger": "/tdd",
+      "description": "Trigger tdd-guide to write tests-first before implementing clean code edits.",
+      "executor": "npm run test:tdd"
+    },
+    {
+      "trigger": "/build-fix",
+      "description": "Check compilation status, isolate type errors, and apply surgical compilation fixes.",
+      "executor": "npx tsc --noEmit"
+    },
+    {
+      "trigger": "/code-review",
+      "description": "Audit modified git files against security, quality, and project styling rules.",
+      "executor": "node scripts/openclaw_review.js"
+    },
+    {
+      "trigger": "/security-scan",
+      "description": "Scan the codebase for credentials leaks, SQL injections, XSS, and unvalidated paths.",
+      "executor": "npm run audit:security"
+    },
+    {
+      "trigger": "/update-docs",
+      "description": "Run doc-updater to index file changes, generate fresh AST codemaps under docs/CODEMAPS/.",
+      "executor": "node scripts/openclaw_docs.js"
+    },
+    {
+      "trigger": "/refactor-clean",
+      "description": "Scan workspace with knip or depcheck to clean dead code and consolidate exports.",
+      "executor": "npx knip"
+    },
+    {
+      "trigger": "/checkpoint",
+      "description": "Commit current working changes to git with detailed, descriptive message.",
+      "executor": "git add . && git commit -m"
+    },
+    {
+      "trigger": "/cost-report",
+      "description": "Output active token usage metrics, dollar expenditures, and savings ratio telemetry.",
+      "executor": "cat scratch/agent_memory.md | grep -i cost"
+    },
+    {
+      "trigger": "/sessions",
+      "description": "List all active local agent sessions, workspace profiles, and context nodes.",
+      "executor": "ls -la scratch/"
+    }
+  ]
+}
