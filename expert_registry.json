@@ -1,0 +1,362 @@
+{
+  "a11y-architect": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/a11y-architect.json",
+    "description": "Accessibility Architect specializing in WCAG 2.2 compliance for Web and Native platforms. Use PROACTIVELY when designing UI components, establishing design systems, or auditing code for inclusive user experiences.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "architect": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/architect.json",
+    "description": "Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": true
+  },
+  "build-error-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/build-error-resolver.json",
+    "description": "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "chief-of-staff": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/chief-of-staff.json",
+    "description": "Personal communication chief of staff that triages email, Slack, LINE, and Messenger. Classifies messages into 4 tiers (skip/info_only/meeting_info/action_required), generates draft replies, and enforces post-send follow-through via hooks. Use when managing multi-channel communication workflows.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": true
+  },
+  "code-architect": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/code-architect.json",
+    "description": "Designs feature architectures by analyzing existing codebase patterns and conventions, then providing implementation blueprints with concrete files, interfaces, data flow, and build order.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "code-explorer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/code-explorer.json",
+    "description": "Deeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, and documenting dependencies to inform new development.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "code-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/code-reviewer.json",
+    "description": "Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "code-simplifier": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/code-simplifier.json",
+    "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving behavior. Focus on recently modified code unless instructed otherwise.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "comment-analyzer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/comment-analyzer.json",
+    "description": "Analyze code comments for accuracy, completeness, maintainability, and comment rot risk.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "conversation-analyzer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/conversation-analyzer.json",
+    "description": "Use this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks. Triggered by /hookify without arguments.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "cpp-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/cpp-build-resolver.json",
+    "description": "C++ build, CMake, and compilation error resolution specialist. Fixes build errors, linker issues, and template errors with minimal changes. Use when C++ builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "cpp-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/cpp-reviewer.json",
+    "description": "Expert C++ code reviewer specializing in memory safety, modern C++ idioms, concurrency, and performance. Use for all C++ code changes. MUST BE USED for C++ projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "csharp-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/csharp-reviewer.json",
+    "description": "Expert C# code reviewer specializing in .NET conventions, async patterns, security, nullable reference types, and performance. Use for all C# code changes. MUST BE USED for C# projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "dart-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/dart-build-resolver.json",
+    "description": "Dart/Flutter build, analysis, and dependency error resolution specialist. Fixes `dart analyze` errors, Flutter compilation failures, pub dependency conflicts, and build_runner issues with minimal, surgical changes. Use when Dart/Flutter builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "database-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/database-reviewer.json",
+    "description": "PostgreSQL database specialist for query optimization, schema design, security, and performance. Use PROACTIVELY when writing SQL, creating migrations, designing schemas, or troubleshooting database performance. Incorporates Supabase best practices.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "django-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/django-build-resolver.json",
+    "description": "Django/Python build, migration, and dependency error resolution specialist. Fixes pip/Poetry errors, migration conflicts, import errors, Django configuration issues, and collectstatic failures with minimal changes. Use when Django setup or startup fails.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "django-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/django-reviewer.json",
+    "description": "Expert Django code reviewer specializing in ORM correctness, DRF patterns, migration safety, security misconfigurations, and production-grade Django practices. Use for all Django code changes. MUST BE USED for Django projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "doc-updater": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/doc-updater.json",
+    "description": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "docs-lookup": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/docs-lookup.json",
+    "description": "When the user asks how to use a library, framework, or API or needs up-to-date code examples, use Context7 MCP to fetch current documentation and return answers with examples. Invoke for docs/API/setup questions.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "e2e-runner": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/e2e-runner.json",
+    "description": "End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwright fallback. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "fastapi-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/fastapi-reviewer.json",
+    "description": "Reviews FastAPI applications for async correctness, dependency injection, Pydantic schemas, security, OpenAPI quality, testing, and production readiness.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "flutter-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/flutter-reviewer.json",
+    "description": "Flutter and Dart code reviewer. Reviews Flutter code for widget best practices, state management patterns, Dart idioms, performance pitfalls, accessibility, and clean architecture violations. Library-agnostic — works with any state management solution and tooling.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "fsharp-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/fsharp-reviewer.json",
+    "description": "Expert F# code reviewer specializing in functional idioms, type safety, pattern matching, computation expressions, and performance. Use for all F# code changes. MUST BE USED for F# projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "gan-evaluator": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/gan-evaluator.json",
+    "description": "GAN Harness — Evaluator agent. Tests the live running application via Playwright, scores against rubric, and provides actionable feedback to the Generator.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "gan-generator": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/gan-generator.json",
+    "description": "GAN Harness — Generator agent. Implements features according to the spec, reads evaluator feedback, and iterates until quality threshold is met.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "gan-planner": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/gan-planner.json",
+    "description": "GAN Harness — Planner agent. Expands a one-line prompt into a full product specification with features, sprints, evaluation criteria, and design direction.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "go-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/go-build-resolver.json",
+    "description": "Go build, vet, and compilation error resolution specialist. Fixes build errors, go vet issues, and linter warnings with minimal changes. Use when Go builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "go-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/go-reviewer.json",
+    "description": "Expert Go code reviewer specializing in idiomatic Go, concurrency patterns, error handling, and performance. Use for all Go code changes. MUST BE USED for Go projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "harmonyos-app-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/harmonyos-app-resolver.json",
+    "description": "HarmonyOS application development expert specializing in ArkTS and ArkUI. Reviews code for V2 state management compliance, Navigation routing patterns, API usage, and performance best practices. Use for HarmonyOS/OpenHarmony projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "harness-optimizer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/harness-optimizer.json",
+    "description": "Analyze and improve the local agent harness configuration for reliability, cost, and throughput.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "healthcare-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/healthcare-reviewer.json",
+    "description": "Reviews healthcare application code for clinical safety, CDSS accuracy, PHI compliance, and medical data integrity. Specialized for EMR/EHR, clinical decision support, and health information systems.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "homelab-architect": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/homelab-architect.json",
+    "description": "Designs home and small-lab network plans from hardware inventory, goals, and operator experience level, with safe staged changes and rollback guidance.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "java-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/java-build-resolver.json",
+    "description": "Java/Maven/Gradle build, compilation, and dependency error resolution specialist. Automatically detects Spring Boot or Quarkus and applies framework-specific fixes. Fixes build errors, Java compiler errors, and Maven/Gradle issues with minimal changes. Use when Java builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "java-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/java-reviewer.json",
+    "description": "Expert Java code reviewer for Spring Boot and Quarkus projects. Automatically detects the framework and applies the appropriate review rules. Covers layered architecture, JPA/Panache, MongoDB, security, and concurrency. MUST BE USED for all Java code changes.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "kotlin-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/kotlin-build-resolver.json",
+    "description": "Kotlin/Gradle build, compilation, and dependency error resolution specialist. Fixes build errors, Kotlin compiler errors, and Gradle issues with minimal changes. Use when Kotlin builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "kotlin-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/kotlin-reviewer.json",
+    "description": "Kotlin and Android/KMP code reviewer. Reviews Kotlin code for idiomatic patterns, coroutine safety, Compose best practices, clean architecture violations, and common Android pitfalls.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "loop-operator": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/loop-operator.json",
+    "description": "Operate autonomous agent loops, monitor progress, and intervene safely when loops stall.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "mle-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/mle-reviewer.json",
+    "description": "Production machine-learning engineering reviewer for data contracts, feature pipelines, training reproducibility, offline/online evaluation, model serving, monitoring, and rollback. Use when ML, MLOps, model training, inference, feature store, or evaluation code changes.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "network-architect": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/network-architect.json",
+    "description": "Designs enterprise or multi-site network architecture from requirements, using existing network skills for focused routing, validation, automation, and troubleshooting detail.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "network-config-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/network-config-reviewer.json",
+    "description": "Reviews router and switch configurations for security, correctness, stale references, risky change-window commands, and missing operational guardrails.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "network-troubleshooter": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/network-troubleshooter.json",
+    "description": "Diagnoses network connectivity, routing, DNS, interface, and policy symptoms with a read-only OSI-layer workflow and evidence-backed root cause summary.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "opensource-forker": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/opensource-forker.json",
+    "description": "Fork any project for open-sourcing. Copies files, strips secrets and credentials (20+ patterns), replaces internal references with placeholders, generates .env.example, and cleans git history. First stage of the opensource-pipeline skill.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "opensource-packager": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/opensource-packager.json",
+    "description": "Generate complete open-source packaging for a sanitized project. Produces CLAUDE.md, setup.sh, README.md, LICENSE, CONTRIBUTING.md, and GitHub issue templates. Makes any repo immediately usable with Claude Code. Third stage of the opensource-pipeline skill.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "opensource-sanitizer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/opensource-sanitizer.json",
+    "description": "Verify an open-source fork is fully sanitized before release. Scans for leaked secrets, PII, internal references, and dangerous files using 20+ regex patterns. Generates a PASS/FAIL/PASS-WITH-WARNINGS report. Second stage of the opensource-pipeline skill. Use PROACTIVELY before any public release.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "performance-optimizer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/performance-optimizer.json",
+    "description": "Performance analysis and optimization specialist. Use PROACTIVELY for identifying bottlenecks, optimizing slow code, reducing bundle sizes, and improving runtime performance. Profiling, memory leaks, render optimization, and algorithmic improvements.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "planner": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/planner.json",
+    "description": "Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": true
+  },
+  "pr-test-analyzer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/pr-test-analyzer.json",
+    "description": "Review pull request test coverage quality and completeness, with emphasis on behavioral coverage and real bug prevention.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "python-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/python-reviewer.json",
+    "description": "Expert Python code reviewer specializing in PEP 8 compliance, Pythonic idioms, type hints, security, and performance. Use for all Python code changes. MUST BE USED for Python projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "pytorch-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/pytorch-build-resolver.json",
+    "description": "PyTorch runtime, CUDA, and training error resolution specialist. Fixes tensor shape mismatches, device errors, gradient issues, DataLoader problems, and mixed precision failures with minimal changes. Use when PyTorch training or inference crashes.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "refactor-cleaner": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/refactor-cleaner.json",
+    "description": "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "rust-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/rust-build-resolver.json",
+    "description": "Rust build, compilation, and dependency error resolution specialist. Fixes cargo build errors, borrow checker issues, and Cargo.toml problems with minimal changes. Use when Rust builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "rust-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/rust-reviewer.json",
+    "description": "Expert Rust code reviewer specializing in ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Use for all Rust code changes. MUST BE USED for Rust projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "security-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/security-reviewer.json",
+    "description": "Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "seo-specialist": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/seo-specialist.json",
+    "description": "SEO specialist for technical SEO audits, on-page optimization, structured data, Core Web Vitals, and content/keyword mapping. Use for site audits, meta tag reviews, schema markup, sitemap and robots issues, and SEO remediation plans.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "silent-failure-hunter": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/silent-failure-hunter.json",
+    "description": "Review code for silent failures, swallowed errors, bad fallbacks, and missing error propagation.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "swift-build-resolver": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/swift-build-resolver.json",
+    "description": "Swift/Xcode build, compilation, and dependency error resolution specialist. Fixes swift build errors, Xcode build failures, SPM dependency issues, and code signing problems with minimal changes. Use when Swift builds fail.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "swift-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/swift-reviewer.json",
+    "description": "Expert Swift code reviewer specializing in protocol-oriented design, value semantics, ARC memory management, Swift Concurrency, and idiomatic patterns. Use for all Swift code changes. MUST BE USED for Swift projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "tdd-guide": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/tdd-guide.json",
+    "description": "Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  },
+  "type-design-analyzer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/type-design-analyzer.json",
+    "description": "Analyze type design for encapsulation, invariant expression, usefulness, and enforcement.",
+    "enable_write_tools": false,
+    "enable_subagent_tools": false
+  },
+  "typescript-reviewer": {
+    "specPath": "/Users/tuoaoa/Tuoaoa/devflow/aimemory/scratch/converted_agents/typescript-reviewer.json",
+    "description": "Expert TypeScript/JavaScript code reviewer specializing in type safety, async correctness, Node/web security, and idiomatic patterns. Use for all TypeScript and JavaScript code changes. MUST BE USED for TypeScript/JavaScript projects.",
+    "enable_write_tools": true,
+    "enable_subagent_tools": false
+  }
+}
