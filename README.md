@@ -1,6 +1,6 @@
-# 🚀 Toàn bộ kho vũ khí Multi-Agent cho Antigravity, OpenClaw & Hermes (Đã hiệu chỉnh & Tối ưu)
+# 🚀 Toàn bộ kho vũ khí Multi-Agent cho Antigravity, OpenClaw, Hermes & Cline (Đã hiệu chỉnh & Tối ưu)
 
-Chào mừng bạn đến với kho vũ khí Multi-Agent thế hệ mới dành riêng cho các trợ lý lập trình tiên tiến: **Antigravity**, **OpenClaw** và **Hermes (Ollama/OpenRouter)**. Hệ thống này đã được chuyển đổi, tối ưu hóa và kích hoạt trực tiếp trên môi trường máy Mac (Local-first, không dùng Docker), cung cấp bộ giải pháp **3-trong-1** tích hợp toàn bộ **60 chuyên gia subagent** và **64 Skills & System Directives** tối ưu.
+Chào mừng bạn đến với kho vũ khí Multi-Agent thế hệ mới dành riêng cho các trợ lý lập trình tiên tiến hàng đầu hiện nay: **Antigravity**, **OpenClaw**, **Hermes (Ollama/OpenRouter)** và **Cline (VS Code)**. Hệ thống này đã được chuyển đổi, tối ưu hóa và kích hoạt trực tiếp trên môi trường máy Mac (Local-first, không dùng Docker), cung cấp bộ giải pháp **4-trong-1** tích hợp toàn bộ **60 chuyên gia subagent** và **64 Skills & System Directives** tối ưu.
 
 ---
 
@@ -11,13 +11,14 @@ Chào mừng bạn đến với kho vũ khí Multi-Agent thế hệ mới dành 
 
 ---
 
-## ⚙️ Điểm Cải Tiến & Bản Hiệu Chỉnh 3-Trong-1
+## ⚙️ Điểm Cải Tiến & Bản Hiệu Chỉnh 4-Trong-1
 
 Hệ thống được thiết kế tối ưu 100% cho việc chạy Local-first trên macOS:
 1.  **Chuyển đổi Đa nền tảng (Multi-Platform Porting):**
     *   **Antigravity JSON Specs:** Tự động biên dịch sang định dạng subagent tương thích thông qua `define_subagent`.
     *   **OpenClaw YAML/JSON Schema:** Đóng gói hoàn chỉnh thành cấu hình ClawdBot tại thư mục `openclaw_config/`.
     *   **Hermes ChatML Directives:** Định dạng lại prompts sang chuẩn ChatML của local LLM, chống loạn vai diễn và ổn định Function Calling.
+    *   **Cline Rules Directives:** Cấu hình hóa thành luật chỉ dẫn đặc hiệu trong tệp `clinerules.example` nhằm siết chặt kỷ luật và trị triệt để bệnh ngáo.
 2.  **Cơ chế Tiết kiệm Token (Token Optimization):** Mỗi prompt được cài cắm quy tắc thông minh giúp giảm tối đa dung lượng token đọc chéo, chỉ đọc file code thực sự liên quan và phản hồi cực kỳ súc tích.
 3.  **Sổ Ký Ức Cộng Tác (Collaborative Memory Ledger):** Tích hợp sổ nhật ký `agent_memory.md` để đồng bộ ngữ cảnh tiến độ liên phiên, ngăn chặn hiện tượng mất trí nhớ của AI.
 
@@ -91,12 +92,26 @@ Tất cả 60 agents đã được đóng gói thành công trong tệp [expert_
     2. Cấu hình các lệnh Terminal nhanh bằng cách tích hợp tệp `openclaw_config/custom_commands.json` vào mục commands trong cấu hình của OpenClaw.
 *   **Cách gọi lệnh:** Thực hiện gõ trực tiếp `/plan`, `/tdd`, `/build-fix` trên console của OpenClaw để kích hoạt các tool tự động.
 
-### 3. Mô Hình Hermes (Ollama / OpenRouter / Local LLM)
+### 3. Mô Mô Hình Hermes (Ollama / OpenRouter / Local LLM)
 *   **Cơ chế:** Sử dụng trực tiếp bộ thư viện prompt định dạng ChatML tại thư mục [hermes_prompts/agents/](file:///Users/tuoaoa/Tuoaoa/devflow/everything-antigravity-code/hermes_prompts/agents/).
 *   **Đặc tính:** Được cấu trúc chặt chẽ bằng block `<|im_start|>system` và `<|im_end|>` kèm theo các guideline cô lập vai diễn, giúp mô hình Hermes hoạt động chính xác khi gọi hàm (Function Calling) mà không bị loạn vai.
 *   **Cài đặt:**
     1. Copy nội dung tệp `.prompt` của Agent bạn muốn triệu hồi từ thư mục `hermes_prompts/agents/` dán vào phần **System Prompt / Modelfile** trong Ollama hoặc bảng điều khiển OpenRouter.
-    2. Chạy kiểm thử để cảm nhận độ mượt mà và chính xác khi ra lệnh gọi hàm.
+
+### 4. Trợ Lý Cline (VS Code Extension)
+*   **Cơ chế:** Sử dụng chỉ thị đặc hiệu cực kỳ nghiêm ngặt tại tệp [clinerules.example](file:///Users/tuoaoa/Tuoaoa/devflow/everything-antigravity-code/clinerules.example) hoặc tệp `.clinerules` trong thư mục [cline_config/](file:///Users/tuoaoa/Tuoaoa/devflow/everything-antigravity-code/cline_config/).
+
+#### 🛡️ Cách trang bị cho Cline trên VS Code để trị bệnh ngáo và tiết kiệm token:
+Để Cline hoạt động kỷ luật, thông minh và không phung phí tiền API của bạn, hãy làm theo 4 bước cực kỳ đơn giản sau:
+
+1. **Sao chép cấu hình mẫu:** Copy file [clinerules.example](file:///Users/tuoaoa/Tuoaoa/devflow/everything-antigravity-code/clinerules.example) (hoặc file `.clinerules` bên trong thư mục [cline_config/](file:///Users/tuoaoa/Tuoaoa/devflow/everything-antigravity-code/cline_config/)).
+2. **Triển khai vào dự án:** Ném trực tiếp file này vào thư mục gốc (Root Directory) của dự án mà bạn đang phát triển và mở chung với Cline trên VS Code.
+3. **Đổi tên file:** Đổi tên file vừa copy thành: **`.clinerules`** (Lưu ý có dấu chấm ở đầu).
+4. **Bắt đầu trải nghiệm:** Khởi động lại VS Code hoặc mở một cuộc hội thoại mới với Cline. Cline sẽ tự động nạp tệp này và tuân thủ tuyệt đối các kỷ luật thép sau:
+    *   **Bắt buộc bước `/plan`:** Cline tuyệt đối không được tự ý sửa file bậy bạ khi chưa được người dùng duyệt kế hoạch triển khai qua lệnh `/plan`.
+    *   **Cấm chạy terminal bừa bãi:** Chặn đứng các vòng lặp sửa lỗi tự động vô hạn hoặc chạy các lệnh Terminal mang tính phá hoại không có checkpoint.
+    *   **Token Optimization cực đoan:** Ép Cline chỉ đọc những file code thực sự liên quan, viết code dạng surgical patch diff nén cao, tuyệt đối tránh in lại cả file hoặc giải thích dông dài giúp tiết kiệm 40% - 60% chi phí API.
+    *   **Sổ Ký Ức Cộng Tác (`agent_memory.md`):** Ép Cline tự động đồng bộ tiến độ phiên làm việc để không bị mất trí nhớ giữa các lần chat.
 
 ---
 
